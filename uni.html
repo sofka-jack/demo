@@ -1,0 +1,339 @@
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Учебные заведения</title>
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Jura|Montserrat|Poiret+One" rel="stylesheet">		
+		<link rel="stylesheet" href="style.css">	
+		<link href="D:/3 kurs/kursach/open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+		<link href="D:/3 kurs/kursach/open-iconic-master/font/css/open-iconic.css" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		</script>		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+		  <!-- TO TOP -->
+  <script >$(document).ready(function(){
+  $('body').append('<a href="#" id="go-top" title="Вверх">Вверх</a>');
+});
+
+$(function() {
+ $.fn.scrollToTop = function() {
+  $(this).hide().removeAttr("href");
+  if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")
+  var scrollDiv = $(this);
+  $(window).scroll(function() {
+   if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
+   else $(scrollDiv).fadeIn("slow")
+  });
+  $(this).click(function() {
+   $("html, body").animate({scrollTop: 0}, "slow")
+  })
+ }
+});
+
+$(function() {
+ $("#go-top").scrollToTop();
+});</script>
+<script >
+	$(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+        //забираем идентификатор бока с атрибута href
+        var id  = $(this).attr('href'),
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 700);
+    });
+});
+</script>
+
+
+
+	</head>
+
+	<body>
+    <div id="ind"></div>
+    <div class="container-fluid ">    
+      <div id="vmen"  class="collapse row  fixed-top">
+        <div class="col-md-3 offset-md-10 vmenn" id="menu" style="">Меню<br>  
+            <a href="index.html" id="menu">Главная</a><br>
+            <a href="" id="menu">Статьи</a><br>
+            <a href="#spec" id="menu"class="">Учебные заведения</a><br>
+            <a href="#spec" id="menu"class="">Каталог специальностей</a><br>
+            <a href="#book" id="menu"class="">Библиотека</a><br>
+            <a href="#test" id="menu"class="">Профориентационные тесты</a><br>
+            <a href="#ask" id="menu"class="">Вопрос-ответ</a>
+        </div>
+      </div>
+
+    <div class="row fixed-top header"> 
+      <div class="col "><a href="index.html" id="menu" >Я выбираю профессию</a></div>
+      <div class="col-1 align-self-center">
+        <a class="vmen" href="#vmen" data-toggle="collapse"><img src="img/menu.png" style="width: 40%; height: auto; margin-left: 40%"></a>
+      </div>    
+    </div>      
+
+    <div class="row justify-content-start ">
+      <div class="col-12 p-0"><img class="img-fluid" src="img/uni2.jpg"></div>
+    </div>
+<div style="margin-top: 2%;    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-size: 220%;">Учебные заведения</div><br>
+    <div class="row justify-content-sm-center">
+      <div class="col-md-9 block" style="margin-top: 1%;">
+        
+          <div class="list-group list-group-flush"style="font-size: 90%">
+            <a href="#br" data-toggle="collapse" class="list-group-item list-group-item-action">Брестская область</a>
+              <div id="br" class="collapse">
+                <a id="hr" href="http://liceydrg.brest.by" target=_blank> «Областной аграрно-производственный профессиональный лицей г. Дрогичин» </a><br>
+                <a id="hr" href="http://bplm.brest.by" target=_blank> «Барановичский государственный профессиональный лицей машиностроения» </a><br>
+                <a id="hr" href="http://bsplb.brest.by" target=_blank> «Барановичский государственный профессиональный лицей строителей» </a><br>
+                <a id="hr" href="http://kljblz.brest.by" target=_blank> «Белоозёрский государственный профессионально-технический колледж электротехники» </a><br>
+                <a id="hr" href="http://berezagpl.by" target=_blank>  «Березовский государственный профессиональный лицей строителей» </a><br>
+                <a id="hr" href="http://bgpllp.brest.by" target=_blank>  «Брестский государственный профессиональный лицей легкой промышленности» </a><br>
+                <a id="hr" href="http://gptu27.brest.by" target=_blank> «Брестский государственный профессиональный лицей железнодорожного транспорта» </a><br>
+                <a id="hr" href="http://ptktorg.brest.by" target=_blank> «Брестский государственный торгово-технологический колледж» </a><br>
+                <a id="hr" href="http://gptkso.brest.by" target=_blank> «Брестский государственный профессионально-технический колледж сферы обслуживания» </a><br>
+                <a id="hr" href="http://ptk-sviazi.iatp.by" target=_blank> «Брестский государственный колледж связи» </a><br>
+                <a id="hr" href="http://ptu65.brest.by" target=_blank>  «Брестский государственный профессиональный лицей строителей» </a><br>
+                <a id="hr" href="http://vgsptk.brest.by" target=_blank> «Высоковский государственный сельскохозяйственный профессионально-технический колледж» </a><br>
+                <a id="hr" href="http://gnclicei.brest.by" target=_blank> «Ганцевичский государственный профессиональный лицей сельскохозяйственного производства» </a><br>
+                <a id="hr" href="http://luninec-gptk.brest.by" target=_blank>  «Лунинецкий государственный профессионально-технический колледж сельскохозяйственного производства» </a><br>
+                <a id="hr" href="http://lgplp.brest.by" target=_blank> «Лунинецкий государственный политехнический профессионально-технический колледж» </a><br>
+                <a id="hr" href="http://malorita-gplsp.by" target=_blank> «Малоритский государственный профессиональный лицей сельскохозяйственного производства» </a><br>
+                <a id="hr" href="http://pinskgpls.by" target=_blank> «Пинский государственный профессиональный лицей строителей» </a><br>
+                <a id="hr" href="http://ptu161.brest.by" target=_blank> «Пинский государственный профессиональный лицей сельскохозяйственного производства» </a><br>
+                <a id="hr" href="http://pgptkm.by" target=_blank>  «Пинский государственный профессионально-технический колледж машиностроения» </a><br>
+                <a id="hr" href="http://pinskgptklp.brest.by" target=_blank> «Пинский государственный профессионально-технический колледж легкой промышленности» </a><br>
+                <a id="hr" href="http://sgplsp.brest.by" target=_blank> «Столинский государственный профессиональный лицей сельскохозяйственного производства» </a><br>
+                <a id="hr" href="http://ptkp.brest.by" target=_blank> «Брестский государственный профессионально-технический колледж приборостроения» </a><br>
+                <a id="hr" href="http://ivgpl.brest.by" target=_blank> «Ивацевичский государственный профессиональный лицей сельскохозяйственного производства» </a><br>
+                <a id="hr" href="http://kobringplso.brest.by" target=_blank> «Кобринский государственный профессиональный лицей сферы обслуживания» </a><br>
+                <a id="hr" href="http://kgpk.brest.by" target=_blank> «Кобринский государственный политехнический колледж» </a><br>
+                <a id="hr" href="http://novgpl.brest.by" target=_blank> «Новомышский государственный профессиональный лицей сельскохозяйственного производства» </a><br>
+                <a id="hr" href="http://bgptk-so.by" target=_blank> «Барановичский государственный профессионально-технический колледж сферы обслуживания» </a><br>
+
+              </div>  
+            <a href="#vit" data-toggle="collapse" class="list-group-item list-group-item-action">Витебская область</a>
+              <div id="vit" class="collapse">
+                <a id="hr" href="http://vgpl5.by" target=_blank>«Витебский государственный профессиональный лицей № 5 приборостроения»</a><br>
+                <a id="hr" href="http://vgppl.belhost.by" target=_blank> «Витебский государственный политехнический профессиональный лицей» </a><br>
+                <a id="hr" href="http://vgpl1.by" target=_blank> «Витебский государственный профессионально-технический колледж машиностроения им. М.Ф. Шмырева» </a><br>
+                <a id="hr" href="http://college-lp.vitebsk.ws" target=_blank> «Витебский государственный профессионально-технический колледж легкой промышленности» </a><br>
+                <a id="hr" href="http://vgisk.by" target=_blank> «Витебский государственный индустриально-строительный колледж» </a><br>
+                <a id="hr" href="http://vgitk.by" target=_blank> «Витебский государственный индустриально-технологический колледж» </a><br>
+                <a id="hr" href="http://vgptksp.vitebsk.by" target=_blank> «Витебский государственный индустриально-технологический колледж сельскохозяйственного производства» </a><br>
+                <a id="hr" href="http://bgpl.vitebsk-region.edu.by" target=_blank> «Борковичский государственный профессиональный лицей сельскохозяйственного производства»</a><br>
+                <a id="hr" href="http://widzy-nptc.by " target=_blank> «Видзовский государственный профессионально-технический колледж» </a><br>
+                <a id="hr" href="http://www.lgpl.by" target=_blank> «Лепельский государственный профессиональный лицей»</a> <br>
+                <a id="hr" href="http://ngpl.vitebsk-region.edy.by" target=_blank> «Новолукомльский государственный профессиональный лицей строителей имени Ф.Ф.Дубровского» </a><br>
+                <a id="hr" href="http://ulla-licey.info" target=_blank>«Улльский государственный профессиональный лицей сельскохозяйственного производства имени Л.М. Доватора»</a><br>
+                <a id="hr" href="http://polotsk_lyceum_str.vitebsk.by " target=_blank> «Полоцкий государственный профессиональный лицей строителей» </a><br>
+                <a id="hr" href="http://polotsk-gpl-shp.vitebsk.by" target=_blank> «Полоцкий государственный профессиональный лицей сельскохозяйственного производства» </a><br>
+                <a id="hr" href="http://gptk.vitebsk.by " target=_blank> «Полоцкий государственный химико-технологический колледж» </a><br>
+                <a id="hr" href="http://dgpl.do.am" target=_blank> «Дубровенский государственный профессиональный лицей сельскохозяйственного производства»</a><br>
+                <a id="hr" href="http://kgplsp.vitebsk-region.edu.by" target=_blank> «Кохановский государственный профессиональный лицей сельскохозяйственного производства»</a><br>
+                <a id="hr" href="http://ggpl.by" target=_blank> «Глубокский государственный профессиональный лицей» </a><br>
+                <a id="hr" href="http://vysokskylycey.narod.ru" target=_blank> «Высокский государственный профессиональный лицей сельскохозяйственного производства» </a><br>
+                <a id="hr" href="http://gptk.by" target=_blank> «Поставский государственный профессионально-технический колледж сельскохозяйственного производства» <br>
+                <a id="hr" href="http://gptk.500mb.net" target=_blank> «Городокский государственный профессионально-технический колледж сельскохозяйственного производства имени И.В.Дорощенко» </a><br>
+                <a id="hr" href="http://ststlicey.jimdo.com" target=_blank> «Новополоцкий государственный профессионально-технический колледж строителей» </a><br>
+                <a id="hr" href="http://ngpk.by" target=_blank> «Новополоцкий государственный политехнический колледж» </a><br>
+                <a id="hr" href="http://gptk22.ucoz.ru " target=_blank> «Оршанский государственный профессионально-технический колледж» </a><br>
+                <a id="hr" href="http://ogplm.gb7.ru" target=_blank> «Оршанский государственный профессиональный лицей машиностроения»</a> <br>
+                <a id="hr" href="http://osmec.by" target=_blank> «Оршанский государственный профессиональный механико-экономический колледж»</a> <br>
+                <a id="hr" href="http://ogpllp.datacenter.by" target=_blank> «Оршанский политехнический профессионально-технический колледж»</a> <br>
+                <a id="hr" href="http://lyceum-textile.by" target=_blank> «Оршанский государственный профессиональный лицей текстильщиков имени Г.В.Семёнова» </a><br>
+              </div>
+            <a href="#gom" data-toggle="collapse" class="list-group-item list-group-item-action">Гомельская область</a>
+              <div id="gom" class="collapse">
+                <a id="hr" href="http://ggptu30.gomel.by" target=_blank>  «Гомельский государственный профессиональный лицей речного флота» </a><br>
+                <a id="hr" href="http://rgpsk.at.tut.by" target=_blank> «Рогачевский государственный профессионально-технический колледж строителей» </a><br>
+                <a id="hr" href="http://ggptu-35.gomel.by" target=_blank>   «Гомельский государственный профессиональный лицей железнодорожного транспорта» </a><br>
+                <a id="hr" href="http://ggptu79.gomel.by" target=_blank> «Гомельский государственный профессиональный химико-технологический лицей» </a><br>
+                <a id="hr" href="http://ggptu230.gomel.by" target=_blank>   «Гомельский государственный профессиональный лицей легкой промышленности» </a><br>
+                <a id="hr" href="http://ggptk-bo.narod.ru" target=_blank>   «Гомельский государственный профессионально-технический колледж бытового обслуживания» </a><br>
+                <a id="hr" href="http://ggpsl.gomel.by" target=_blank>   «Гомельский государственный профессиональный строительный лицей им. П.Я. Головачева» </a><br>
+                <a id="hr" href="http://ggppl.by" target=_blank>   «Гомельский государственный профессиональный политехнический лицей» </a><br>
+                <a id="hr" href="http://gplt.gomel.by" target=_blank>  «Гомельский государственный профессиональный лицей торговли» </a><br>
+                <a id="hr" href="http://ggptk.ucoz.ru" target=_blank>  «Гомельский государственный профессиональный аграрно-технический лицей» </a><br>
+                <a id="hr" href="http://ggptk.ucoz.ru" target=_blank>  «Гомельский государственный профессионально-технический колледж кулинарии» </a><br>
+                <a id="hr" href="http://ptk_el.gomel.by" target=_blank>  «Гомельский государственный профессионально-технический колледж электротехники» </a><br>
+                <a id="hr" href="http://ggptknhp.by" target=_blank>  «Гомельский государственный профессионально-технический колледж народных художественных промыслов» </a><br>
+                <a id="hr" href="http://ggplm.gomel.by" target=_blank>  «Гомельский государственный профессионально-технический колледж машиностроения» </a><br>
+                <a id="hr" href="http://gtec-bks.by" target=_blank>  «Гомельский торгово-экономический колледж Белкоопсоюза» </a><br>
+                <a id="hr" href="http://ggplm.gomel.by" target=_blank>   «Гомельское государственное профессионально-техническое училище № 78 машиностроения» </a><br>
+                <a id="hr" href="http:// ggptu152.com " target=_blank>   «Гомельское государственное профессионально-техническое училище № 152 приборостроения» </a><br>
+                <a id="hr" href="http://gomelskoegptu-67.narod.ru" target=_blank>   «Гомельское государственное профессионально-техническое училище № 67 строителей» </a><br>
+                <a id="hr" href="http://dgptu99.vx3.ru" target=_blank>   «Добрушский государственный профессиональный политехнический лицей» </a><br>
+                <a id="hr" href="http://yogptu182.gomel.by" target=_blank>  «Житковичское государственное профессионально-техническое училище № 182 сельскохозяйственного производства» </a><br>
+                <a id="hr" href="http://gpatk.gomel.by" target=_blank>   «Жлобинский государственный профессионально-технический колледж» </a><br>
+                <a id="hr" href="http://jgpl.gomel.by" target=_blank>   «Жлобинский государственный профессиональный лицей сферы обслуживания» </a><br>
+                <a id="hr" href="http://kgpatl.gomel.by" target=_blank>   «Калинковичский государственный профессиональный аграрно-технический лицей» </a><br>
+                <a id="hr" href="http://kgptu179.3dn.ru" target=_blank>   «Костюковский государственный аграрно-технический профессиональный лицей» </a><br>
+                <a id="hr" href="http://lu188.narod.ru" target=_blank>  «Лельчицкий государственный профессиональный лицей» </a><br>
+                <a id="hr" href="http://ptu84.gomel.by" target=_blank>   «Мозырский государственный профессиональный лицей геологии» </a><br>
+                <a id="hr" href="https://mgpls.schools.by" target=_blank>   «Мозырский государственный профессиональный лицей строителей» </a><br>
+                <a id="hr" href="http://gptu-181.blog.tut.by" target=_blank>   «Октябрьский государственный профессиональный лицей» </a><br>
+                <a id="hr" href="http://gptu185.org" target=_blank>   «Приборский государственный профессиональный аграрно-технический лицей» </a><br>
+                <a id="hr" href="http://agrotehlitsey.gomel.by" target=_blank>   «Речицкий государственный профессиональный аграрно-технический лицей» </a><br>
+                <a id="hr" href="http://gptu-150.narod.ru" target=_blank>   «Рогачевское государственное профессионально-техническое училище № 150 приборостроения» </a><br>
+                <a id="hr" href="http://gplh.ehost.by" target=_blank>   «Светлогорский государственный профессиональный лицей химиков» </a><br>
+                <a id="hr" href="http://gptu183.xoiniki.com" target=_blank>  «Хойникское государственное профессионально-техническое училище № 183 мелиоративного строительства» </a><br>
+              </div>
+            <a href="#gr" data-toggle="collapse" class="list-group-item list-group-item-action">Гродненская область</a>
+              <div id="gr" class="collapse">
+                <a id="hr" href="http://bgspl.of.by " target=_blank> «Берестовицкий государственный сельскохозяйственный профессиональный лицей»</a><br>
+                <a id="hr" href="http://vsl.by" target=_blank> «Волковысский государственный строительный профессиональный лицей»</a><br>
+                <a id="hr" href="http://ptu190.grodno.unibel.by" target=_blank> «Вороновский государственный профессионально-технический колледж сельскохозяйственного производства»</a><br>
+                <a id="hr" href="http://ggspl.grodno.unibel.by" target=_blank> «Гродненский государственный строительный профессиональный лицей»</a><br>
+                <a id="hr" href="http://ggpek.grodno.unibel.by" target=_blank> «Гродненский государственный профессиональный электротехнический колледж им. И.Счастного»</a><br>
+                <a id="hr" href="http://ggptk.grodno.unibel.by" target=_blank>  «Гродненский государственный профессиональный технологический колледж»</a><br>
+                <a id="hr" href="http://ptu119.grodno.unibel.by" target=_blank>  «Гродненский государственный профессиональный лицей строителей №1»</a><br>
+                <a id="hr" href="http://ptkp.grodno.by" target=_blank> «Гродненский государственный профессионально-технический колледж приборостроения»</a><br>
+                <a id="hr" href="http://ggptklp.grodno.unibel.by" target=_blank>  «Гродненский государственный колледж техники, технологий и дизайна»</a><br>
+                <a id="hr" href="http://ggptkkh.grodno.unibel.by" target=_blank>  «Гродненский государственный профессионально-технический колледж коммунального хозяйства»</a><br>
+                <a id="hr" href="http://ggptkbon.by" target=_blank> «Гродненский государственный профессионально-технический колледж бытового обслуживания населения»</a><br>
+                <a id="hr" href="http://gghtpl.grodno.unibel.by" target=_blank> «Гродненский государственный химико-технологический профессиональный лицей»</a><br>
+                <a id="hr" href="http://igspl.na.by" target=_blank> «Ивьевский государственный сельскохозяйственный профессиональный лицей»</a><br>
+                <a id="hr" href="http://kgspl.grodno.unibel.by" target=_blank> «Козловщинский государственный сельскохозяйственный профессиональный лицей»</a><br>
+                <a id="hr" href="http://ptu125.grodno.unibel.by" target=_blank>  «Кореличский государственный строительный профессиональный лицей»</a><br>
+                <a id="hr" href="http://lgplms.ucoz.ru" target=_blank> «Лидский государственный профессиональный лицей мелиоративного строительства»</a><br>
+                <a id="hr" href="http://lgppl.grodno.unibel.by" target=_blank> «Лидский государственный профессиональный политехнический лицей»</a><br>
+                <a id="hr" href="http://ptu195.grodno.unibel.by" target=_blank>  «Малоберестовицкий государственный профессиональный лицей перерабатывающей промышленности»</a><br>
+                <a id="hr" href="http://mghptk.grodno.unibel.by" target=_blank>  «Мирский государственный художественный профессионально-технический колледж»</a><br>
+                <a id="hr" href="http://ngpl.grodno.unibel.by" target=_blank> «Неманский государственный профессиональный лицей»</a><br>
+                <a id="hr" href="http://ngspl.ucoz.net" target=_blank>  «Новогрудский государственный сельскохозяйственный профессиональный лицей»</a><br>
+                <a id="hr" href="http://optu.inbel.biz" target=_blank>  «Ошмянский государственный профессиональный аграрно-технический колледж»</a><br>
+                <a id="hr" href="http://sgspl.ucoz.com" target=_blank> «Скидельский государственный сельскохозяйственный профессиональный лицей»</a><br>
+                <a id="hr" href="http://sgptksp.grodno.unibel.by" target=_blank> «Слонимский государственный профессионально-технический колледж сельскохозяйственного производства»</a><br>
+                <a id="hr" href="http://ptu129.grodno.unibel.by" target=_blank> «Слонимский государственный политехнический профессиональный лицей»</a><br>
+                <a id="hr" href="http://ptu128.grodno.unibel.by" target=_blank> «Сморгонский государственный политехнический профессиональный лицей»</a><br>
+                <a id="hr" href="http://ptu198.grodno.unibel.by" target=_blank> «Щучинский государственный сельскохозяйственный профессиональный лицей»</a><br>
+              </div>
+            <a href="#min" data-toggle="collapse" class="list-group-item list-group-item-action">Минская область</a>
+              <div id="min" class="collapse">
+                <a id="hr" href="http://ptu42.minsk-region.edu.by" target=_blank> «Березинский аграрно-технический профессиональный лицей» </a><br>
+                <a id="hr" href="http://oatpl.minsk-region.edu.by" target=_blank> «Областной аграрно-технический профессиональный лицей» </a><br>
+                <a id="hr" href="http://bgk-borisov.by" target=_blank>«Борисовский государственный колледж» </a><br>
+                <a id="hr" href="http://bgspl.ihb.by" target=_blank> «Борисовский государственный строительный профессиональный лицей» </a><br>
+                <a id="hr" href="http://bglpk.by" target=_blank>«Борисовский государственный лесоагротехнический профессиональный колледж» </a><br>
+                <a id="hr" href="http://vileyka-k.at.tut.by" target=_blank>«Вилейский государственный профессионально-технический колледж» </a><br>
+                <a id="hr" href="http://vgspl.at.tut.by" target=_blank> «Вилейский государственный сельскохозяйственный профессиональный лицей» </a><br>
+                <a id="hr" href="http://vspl.minsk-region.edu.by" target=_blank> «Воложинский сельскохозяйственный профессиональный лицей» </a><br>
+                <a id="hr" href="http://zhodinopl.by" target=_blank> «Жодинский профессиональный лицей» </a><br>
+                <a id="hr" href="http://kletskspl.minsk-region.edu.by" target=_blank>«Клецкий сельскохозяйственный профессиональный лицей» </a><br>
+                <a id="hr" href="http://spl.by" target=_blank> «Копыльский сельскохозяйственный профессиональный лицей» </a><br>
+                <a id="hr" href="http://lyceumluban.edu.minskregion.by" target=_blank> «Любанский сельскохозяйственный профессиональный лицей» </a><br>
+                <a id="hr" href="http://mgppl.sml.by" target=_blank>«Молодечненский государственный профессионально-технический колледж» </a><br>
+                <a id="hr" href="http://www.mtec.by" target=_blank>«Молодечненский торгово-экономический колледж Белкоопсоюза» </a><br>
+                <a id="hr" href="http://pgspl.minsk-region.edu.by" target=_blank> «Правдинский государственный строительный профессиональный лицей» </a><br>
+                <a id="hr" href="http://svispl.minsk-region.edu.by" target=_blank> «Свирский сельскохозяйственный профессиональный лицей» </a><br>
+                <a id="hr" href="http://sptk.by" target=_blank> «Слуцкий профессионально-технический колледж перерабатывающей промышленности» </a><br>
+                <a id="hr" href="http://smilspl.minsk-region.edu.by" target=_blank> «Смиловичский сельскохозяйственный профессиональный лицей» </a><br>
+                <a id="hr" href="http://sgatpl.minsk-region.edu.by" target=_blank> «Смолевичский государственный аграрно-технический профессиональный лицей» </a><br>
+                <a id="hr" href="http://sspl.minsk-region.edu.by" target=_blank>«Солигорский государственный профессионально-технический колледж» </a><br>
+                <a id="hr" href="http://ugspl.minsk-region.edu.by" target=_blank>«Узденский государственный сельскохозяйственный профессиональный лицей» </a><br>
+                <a id="hr" href="http://cherlicei.by" target=_blank>«Червенский профессиональный строительный лицей» </a><br>
+                <a id="hr" href="http://sgspl.by" target=_blank> «Слуцкий государственный сельскохозяйственный профессиональный лицей» </a><br>
+                <a id="hr" href="http://ptkt.minsk.edu.by" target=_blank> «Минский государственный профессионально-технический колледж торговли» </a><br>
+                <a id="hr" href="http://ptk-zht.minsk.edu.by" target=_blank> «Профессионально-технический колледж железнодорожного транспорта им. Е.П. Юшкевича» </a><br>
+                <a id="hr" href="http://ptkhl.edu.by" target=_blank> «Государственный профессионально-технический колледж хлебопечения» </a><br>
+                <a id="hr" href="http://ptk-skh.minsk.edu.by" target=_blank> «Минский государственный профессионально-технический колледж строительства и коммунального хозяйства» </a><br>
+                <a id="hr" href="http://licey6.minsk.edu.by" target=_blank> «Минский государственный профессиональный лицей №6 приборостроения» </a><br>
+                <a id="hr" href="http://ptk-logist.minsk.edu.by" target=_blank>«Минский государственный профессиональный лицей №2 легкой промышленности» </a><br>
+                <a id="hr" href="http://licey4.minsk.edu.by" target=_blank> «Минский государственный профессионально-технический колледж легкой промышленности и бытового обслуживания населения» </a><br>
+                <a id="hr" href="http://mgke.minsk.edu.by" target=_blank> «Минский государственный колледж электроники» </a><br>
+                <a id="hr" href="http://ptk-kulinarii.minsk.edu.by" target=_blank> «Минский государственный профессионально-технический колледж кулинарии» </a><br>
+                <a id="hr" href="http://licey13.minsk.edu.by" target=_blank> «Минский государственный профессиональный лицей №13 строительства» </a><br>
+                <a id="hr" href="http://ptk-lp.minsk.edu.by" target=_blank> «Минский государственный профессионально-технический колледж легкой промышленности» </a><br>
+                <a id="hr" href="http://ptkshp.minsk.edu.by" target=_blank> «Минский государственный профессионально-технический колледж швейного производства» </a><br>
+                <a id="hr" href="http://ptk-mpt.minsk.edu.by" target=_blank> «Минский государственный профессионально-технический колледж монтажных и подъемно-транспортных работ» </a><br>
+                <a id="hr" href="http://ptk-dpi.minsk.edu.by" target=_blank> «Минский государственный профессионально- технический колледж декоративно-прикладного искусства им. Н.А. Кедышко» </a><br>
+                <a id="hr" href="http://ptk-stroj.minsk.edu.by" target=_blank> «Минский государственный профессионально-технический колледж строителей им. В.Г. Каменского» </a><br>
+                <a id="hr" href="http://kso.minsk.edu.by" target=_blank> «Минский государственный колледж сферы обслуживания» </a><br>
+                <a id="hr" href="http://ptk-pol.minsk.edu.by" target=_blank> «Минский государственный профессионально-технический колледж полиграфии им. В.З. Хоружей» </a><br>
+                <a id="hr" href="http://licey9.minsk.edu.by" target=_blank> «Минский государственный профессиональный лицей № 9 автомобилестроения» </a><br>
+                <a id="hr" href="http://licey12.minsk.edu.by" target=_blank> «Минский профессиональный лицей №12 строительства» </a><br>
+                <a id="hr" href="http://mtk-bks.by" target=_blank> «Минский торговый колледж Белкоопсоюза» </a><br>
+                <a id="hr" href="http://licey14.minsk.edu.by" target=_blank> «Минский государственный профессиональный лицей № 14 деревообрабатывающего производства и транспортного обслуживания» </a><br>
+                <a id="hr" href="http://licey3.minsk.edu.by" target=_blank>«Минский государственный профессиональный лицей № 3 машиностроения» </a><br>
+                <a id="hr" href="http://licey7.minsk.edu.by" target=_blank>«Минский государственный профессиональный лицей № 7 строительства» </a><br>
+                <a id="hr" href="http://licey5.minsk.edu.by" target=_blank>«Минский государственный профессиональный лицей №5 транспортного строительства» </a><br>
+                <a id="hr" href="http://licey10.minsk.edu.by" target=_blank>«Минский государственный профессиональный лицей № 10 строительства им.И.М.Жижеля» </a><br>
+                <a id="hr" href="http://licey8.minsk.edu.by" target=_blank> «Минский государственный профессиональный лицей № 8 перерабатывающей промышленности» </a><br>
+                <a id="hr" href="http://licey1.minsk.edu.by" target=_blank>«Минский государственный профессиональный лицей № 1 машиностроения» </a><br>
+                <a id="hr" href="http://college-ripo.by" target=_blank> «Филиал ПТК  «Республиканский институт профессионального образования» </a><br>
+              </div>
+            <a href="#mog" data-toggle="collapse" class="list-group-item list-group-item-action">Могилевская область</a>          
+              <div id="mog" class="collapse">
+                <a id="hr" href="http://kpl8.mogilev-region.edu.by" target=_blank>«Костюковичский профессиональный лицей № 8» </a><br>
+                <a id="hr" href="http://bgmptk.mogilev.by" target=_blank> «Бобруйский государственный машиностроительный профессионально-технический колледж» </a><br>
+                <a id="hr" href="http://licei-17.by" target=_blank> «Белыничский профессиональный лицей № 17» </a><br>
+                <a id="hr" href="http://bgpl-13.mogilev.by" target=_blank> «Бобруйский государственный профессиональный лицей № 13» </a><br>
+                <a id="hr" href="http://bgsptk.bobr.by" target=_blank> «Бобруйский государственный строительный профессионально-технический колледж» </a><br>
+                <a id="hr" href="http://bgtptk.mogilev.by " target=_blank> «Бобруйский государственный технологический профессионально-технический колледж» </a><br>
+                <a id="hr" href="http://bgpek.mogilev.by" target=_blank> «Бобруйский государственный профессиональный электротехнический колледж им. А.И.Черныша» </a><br>
+                <a id="hr" href="http://licej4.by" target=_blank> «Бобруйский государственный профессиональный лицей № 4» </a><br>
+                <a id="hr" href="http://bgpthk.by " target=_blank> «Бобруйский государственный профессионально-технический художественный колледж» </a><br>
+                <a id="hr" href="http://bgteptk.by " target=_blank> «Бобруйский государственный торгово-экономический профессионально-технический колледж» </a><br>
+                <a id="hr" href="http://gpl9.mogilev.by " target=_blank> «Государственный профессиональный лицей № 9 г. Могилева имени А.П. Старовойтова» </a><br>
+                <a id="hr" href="http://licei10.mogilev.by" target=_blank> «Государственный профессиональный лицей № 10 г.Могилева» </a><br>
+                <a id="hr" href="http://kgpl15.mogilev-region.edu.by" target=_blank> «Кировский государственный профессиональный лицей №15» </a><br>
+                <a id="hr" href="http://licei.mogilev.by " target=_blank> «Климовичский государственный профессиональный лицей № 14» </a><br>
+                <a id="hr" href="http://agrocollege.mogilev.by" target=_blank> «Кричевский государственный профессиональный агротехнический колледж» </a><br>
+                <a id="hr" href="http://mgeptk.sml.by" target=_blank> «Могилевский государственный экономический профессионально-технический колледж» </a><br>
+                <a id="hr" href="http://mgtptk.mogilev.by " target=_blank> «Могилевский государственный технологический профессионально-технический колледж» </a><br>
+                <a id="hr" href="http://mpl5.by " target=_blank> «Могилевский государственный профессиональный лицей № 5» </a><br>
+                <a id="hr" href="http://mgpl1.mogilev.by" target=_blank> «Могилевский государственный профессиональный лицей № 1» </a><br>
+                <a id="hr" href="http://mgmptk.ucoz.ru " target=_blank> «Могилёвский государственный машиностроительный профессионально-технический колледж» </a><br>
+                <a id="hr" href="http://agrocollege.by" target=_blank> «Могилевский государственный профессиональный агролесотехнический колледж им. К.П.Орловского» </a><br>
+                <a id="hr" href="http://mgplm.by" target=_blank> «Могилевский государственный профессиональный лицей машиностроения» </a><br>
+                <a id="hr" href="http://mgpl2.at.tut.by " target=_blank> «Могилевский государственный профессиональный лицей № 2» </a><br>
+                <a id="hr" href="http://mogtk-bks.by" target=_blank> «Могилевский профессионально-технический торговый колледж Потребкооперации» </a><br>
+                <a id="hr" href="http://mpek.mogilev.by" target=_blank> «Могилевский профессиональный электротехнический колледж» </a><br>
+                <a id="hr" href="http://lc8.by" target=_blank> «Осиповичский государственный профессионально-технический колледж» </a><br>
+                <a id="hr" href="http://slavlic.by" target=_blank> «Славгородский государственный профессиональный лицей № 3» </a><br>
+                <a id="hr" href="http://hgpl16nm.mogilev.by" target=_blank> «Хотимский государственный профессиональный лицей № 16» </a><br>
+                <a id="hr" href="http://plcherikov11.mogilev.by" target=_blank> «Чериковский государственный профессиональный лицей № 11» </a><br>
+                <a id="hr" href="http://shklovlicej.mogilev.by" target=_blank> «Шкловский государственный профессиональный лицей № 12» </a><br>
+                <a id="hr" href="http://gsptk.mogilev.by" target=_blank> «Мстиславский государственный строительный профессионально–технический колледж» 
+                <a id="hr" href="http://mgpl6.mogilev-region.edu.by" target=_blank> «Мстиславский государственный профессиональный лицей № 6» </a><br>
+              </div>
+          </div>
+
+                  
+          
+          
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+<div class="row footer">
+  <div class="col-md-4" style="font-size: 130%;">
+    Консультационный центр <br> "Я выбираю профессию"<br>
+  </div>
+  <div class="col-md-3"> Контакты: <br> E-mail: prof_kc@mail.ru</div>
+  <div class="col-md-2"><a href="http://25places.16mb.com" target=_blank><img src=img/25.png class="img-fluid" border=0></a></div>
+  <div class="col-md-2"><a href="http://www.kudapostupat.by" title="КУДА ПОСТУПАТЬ — электронный справочник для абитуриентов"> <img alt="www.kudapostupat.by" src="http://www.kudapostupat.by/88x31.gif" border="0"> </a></div>
+</div>
+
+
+
+    </div>
+  </body>
+
+</html>

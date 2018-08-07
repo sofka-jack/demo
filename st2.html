@@ -1,0 +1,219 @@
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Советы психолога </title>
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Jura|Montserrat|Poiret+One" rel="stylesheet">		
+		<link rel="stylesheet" href="style.css">	
+		<link href="D:/3 kurs/kursach/open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+		<link href="D:/3 kurs/kursach/open-iconic-master/font/css/open-iconic.css" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		</script>		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+		  <!-- TO TOP -->
+  <script >$(document).ready(function(){
+  $('body').append('<a href="#" id="go-top" title="Вверх">Вверх</a>');
+});
+
+$(function() {
+ $.fn.scrollToTop = function() {
+  $(this).hide().removeAttr("href");
+  if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")
+  var scrollDiv = $(this);
+  $(window).scroll(function() {
+   if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
+   else $(scrollDiv).fadeIn("slow")
+  });
+  $(this).click(function() {
+   $("html, body").animate({scrollTop: 0}, "slow")
+  })
+ }
+});
+
+$(function() {
+ $("#go-top").scrollToTop();
+});</script>
+<script >
+	$(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+        //забираем идентификатор бока с атрибута href
+        var id  = $(this).attr('href'),
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 700);
+    });
+});
+</script>
+
+
+
+	</head>
+
+	<body>
+    <div id="ind"></div>
+    <div class="container-fluid ">    
+      <div id="vmen"  class="collapse row  fixed-top">
+        <div class="col-md-3 offset-md-10 vmenn" id="menu" style="">Меню<br>  
+            <a href="index.html" id="menu" >Главная</a><br>
+            <a href="" id="menu" >Статьи</a><br>
+            <a href="uni.html" id="menu"class="">Учебные заведения</a><br>
+            <a href="#spec" id="menu"class="">Каталог специальностей</a><br>
+            <a href="#book" id="menu"class="">Библиотека</a><br>
+            <a href="#test" id="menu"class="">Профориентационные тесты</a><br>
+            <a href="#ask" id="menu"class="">Вопрос-ответ</a>
+
+        </div>
+      </div>
+
+
+    <div class="row fixed-top header"> 
+      <div class="col "><a href="index.html" id="menu" >Я выбираю профессию</a></div>
+      <div class="col-1 align-self-center">
+        <a class="vmen" href="#vmen" data-toggle="collapse"><img src="img/menu.png" style="width: 40%; height: auto; margin-left: 40%"></a>
+      </div>    
+    </div>      
+
+    <div class="row justify-content-start ">
+      <div class="col-12 p-0"><img class="img-fluid" src="img/st22.jpg"></div>
+    </div>
+<div style="margin-top: 2%;    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-size: 220%;">Советы психолога </div><br>
+
+
+
+
+
+    
+    <div class="row justify-content-sm-center">
+      <div class="col-md-9 block" align="left" style="margin-top: 1%; font-size: 140%;">
+        <img src="img/">
+<br>*Выбор профессии — не минутное дело, оно может оказаться самым трудным выбором в твоей жизни.
+<br>*Постарайся не поддаваться на уговоры родителей стать непременно юристом или врачом. Ты можешь стать самым несчастливым юристом на свете.
+<br>*Подумай, чем бы хотелось заниматься именно тебе. Обязательно размышляй над тем, как осуществить свою мечту. Не останавливайся на мысли: "Я буду бизнесменом, у меня будет сотовый телефон и дорогой автомобиль!".
+<br>*Не старайся поступать туда, куда хотят поступить твои друзья. Поверь, ты найдешь себе новых друзей, тем более что вы будете заниматься тем, что вам интересно.
+<br>*Разузнай больше о той профессии, какую хочется тебе выбрать. Если это возможно, побывай в том месте, где, как ты предполагаешь, тебе придется работать впоследствии, поговори с людьми, которые уже занимаются этим делом.
+<br>*Отдавай себе отчет, что решение не может быть абсолютным и что в любое время в твоей жизни могут произойти перемены.
+<br>*Попробуй пройти тесты у психолога. Тесты могут помочь выбрать правильное направление.
+<br>*Постарайся не заблуждаться по поводу своих возможностей. Лучше осознавать свои реальные силы, чем падать с высоты, которую наметил, но не осилил.
+<br>*Не поддавайся чувству страха — это нормальное состояние, которое испытывают все люди перед выбором.
+<br>*Иногда полезно начинать свою карьеру с практики, а не с теории. Например, многие удачливые врачи начинали работать медсестрами или медбратьями.
+<br>*Постарайся обратить особое внимание на предметы, которые необходимы для поступления в выбранное учебное заведение.
+<br>*Не откладывай на завтра то, что можно узнать сегодня. Пытайся узнать все: как поступают, как учатся, как устраиваются работать после окончания обучения. Это поможет сложиться представлению о том, что делать дальше.
+<br>*Старайся участвовать во внеклассных мероприятиях — это поможет тебе научиться общению и правильному поведению в коллективе.
+<br>*Что влияет на выбор профессии
+<br>*Какие факторы обусловливают выбор человеком той или иной профессии? На практике оказывается, что склонности учитываются в последнюю очередь, а вот мнение родителей оказывает огромное влияние. 8 факторов выбора профессии (По Е.А. Климову):
+
+<br>1. Позиция старших членов семьи. Есть старшие, которые несут прямую ответственность за то, как складывается твоя жизнь. Эта забота распространяется и на вопрос о твоей будущей профессии.
+
+<br>2. Позиция товарищей, подруг. Дружеские связи в твоём возрасте уже очень крепки и могут сильно влиять на выбор профессии. Можно дать лишь общий совет: правильным будет решение, которое соответствует твоим интересам и совпадает с интересами общества, в котором ты живешь.
+
+<br>3. Позиция учителей, школьных педагогов. Наблюдая за поведением, учебной и внеучебной активностью учащихся, опытный педагог знает много такого о тебе, что скрыто от непрофессиональных глаз и даже от тебя.
+
+<br>4. Личные профессиональные планы. Под планом в данном случае подразумеваются твои представления об этапах освоения профессии.
+
+<br>5. Способности. О своеобразии своих способностей надо судить не только по успехам в учебе, но и по достижениям в самых разнообразных видах деятельности.
+
+<br>6. Уровень притязаний на общественное признание. Планируя свой трудовой путь, очень важно позаботиться о реалистичности своих притязаний.
+
+<br>7. Информированность. Важно позаботиться о том, чтобы приобретаемые тобой сведения о той или иной профессии не оказались искаженными, неполными, односторонними.
+
+<br>8. Склонности. Склонности проявляются в любимых занятиях, на которые тратится большая часть свободного времени. Это - интересы, подкрепленные определенными способностями.
+
+
+
+
+      </div>
+    </div>
+
+
+
+
+          <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" style="font-size: 80%">
+        <div class="carousel-item active ">
+          <div class="row justify-content-around">
+              <div class="col-md-3 carr">
+                <p>Самые востребованные профессии в Беларуси </p>
+                <img src="img/st1.jpg" class="img-fluid">
+                <div style="font-size: 60%">Специалисты в сфере IT-технологий. Тенденция к востребованности айтишников вызревает уже долгих 4 года, как в пределах Беларуси, так и за ее границами, и велика вероятность, что эта профессия будет оставаться в списке лидеров еще не один год. Повсеместно растет количество мелких и крупных компаний, каждой из которых нужна собственная электронная система организации </div><a href="st1.html" id="hr">Читать далее..</a>
+            
+              </div>
+              <div class=" col-md-3 carr" >
+                <p>Советы психолога</p>
+                <img src="img/st2.jpg" class="img-fluid">
+                <div style="font-size: 60%">Выбор профессии — не минутное дело, оно может оказаться самым трудным выбором в твоей жизни.
+              Постарайся не поддаваться на уговоры родителей стать непременно юристом или врачом. Ты можешь стать самым несчастливым юристом на свете.
+              Подумай, чем бы хотелось заниматься именно тебе. Обязательно размышляй над тем, как осуществить свою мечту. Не останавливайся на мысли: "Я буду бизнесменом, у меня будет сотовый телефон и дорогой автомобиль!". </div><a href="st1.html" id="hr">Читать далее..</a>
+              </div>
+              <div class="col-md-3 carr">
+                <p>Как выбрать профессию</p>
+                <img src="img/st3.jpg" class="img-fluid">
+                <div style="font-size: 60%">Как же разобраться в себе — Психологи считают, что при выборе профессии очень важно соответствие между психологическими особенностями человека и соответствующими характеристиками профессии. Профессия должна быть ИНТЕРЕСНА. Если тебе нравятся животные, растения, то тебе будет интересно в своей профессиональной деятельности сталкиваться с объектами живой природы. Если ты любишь технику, — интерес к ней будет поддерживать тебя в деятельности инженера-конструктора или физика-теоретика.  </div><a href="st1.html" id="hr">Читать далее..</a>
+              </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-around">
+            <div class=" col-md-3 carr" >
+                <p>Самые востребованные профессии в Беларуси </p>
+                <img src="img/st1.jpg" class="img-fluid">
+                <div style="font-size: 60%">Специалисты в сфере IT-технологий. Тенденция к востребованности айтишников вызревает уже долгих 4 года, как в пределах Беларуси, так и за ее границами, и велика вероятность, что эта профессия будет оставаться в списке лидеров еще не один год. Повсеместно растет количество мелких и крупных компаний, каждой из которых нужна собственная электронная система организации </div><a href="st1.html" id="hr">Читать далее..</a>
+            
+              </div>
+              <div class=" col-md-3 carr" >
+                <p>Советы психолога</p>
+                <img src="img/st2.jpg" class="img-fluid">
+                <div style="font-size: 60%">Выбор профессии — не минутное дело, оно может оказаться самым трудным выбором в твоей жизни.
+              Постарайся не поддаваться на уговоры родителей стать непременно юристом или врачом. Ты можешь стать самым несчастливым юристом на свете.
+              Подумай, чем бы хотелось заниматься именно тебе. Обязательно размышляй над тем, как осуществить свою мечту. Не останавливайся на мысли: "Я буду бизнесменом, у меня будет сотовый телефон и дорогой автомобиль!". </div><a href="st1.html" id="hr">Читать далее..</a>
+              </div>
+              <div class="col-md-3 carr">
+                <p>Как выбрать профессию</p>
+                <img src="img/st3.jpg" class="img-fluid">
+                <div style="font-size: 60%">Как же разобраться в себе — Психологи считают, что при выборе профессии очень важно соответствие между психологическими особенностями человека и соответствующими характеристиками профессии. Профессия должна быть ИНТЕРЕСНА. Если тебе нравятся животные, растения, то тебе будет интересно в своей профессиональной деятельности сталкиваться с объектами живой природы. Если ты любишь технику, — интерес к ней будет поддерживать тебя в деятельности инженера-конструктора или физика-теоретика.  </div><a href="st1.html" id="hr">Читать далее..</a>
+              </div>
+            </div>
+          </div>        
+      </div>
+      <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"  aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+
+
+<div class="row footer">
+  <div class="col-md-4" style="font-size: 130%;">
+    Консультационный центр <br> "Я выбираю профессию"<br>
+  </div>
+  <div class="col-md-3"> Контакты: <br> E-mail: prof_kc@mail.ru</div>
+  <div class="col-md-2"><a href="http://25places.16mb.com" target=_blank><img src=img/25.png class="img-fluid" border=0></a></div>
+  <div class="col-md-2"><a href="http://www.kudapostupat.by" title="КУДА ПОСТУПАТЬ — электронный справочник для абитуриентов"> <img alt="www.kudapostupat.by" src="http://www.kudapostupat.by/88x31.gif" border="0"> </a></div>
+</div>
+
+
+
+    </div>
+  </body>
+
+</html>

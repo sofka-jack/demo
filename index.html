@@ -1,0 +1,321 @@
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Консультационный центр</title>
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Jura|Montserrat|Poiret+One" rel="stylesheet">		
+		<link rel="stylesheet" href="style.css">	
+		<link href="C:/wamp64/www/kursach/open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+		<link href="C:/wamp64/www/kursach/open-iconic-master/font/css/open-iconic.css" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		</script>		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+		  <!-- TO TOP -->
+  <script >$(document).ready(function(){
+  $('body').append('<a href="#" id="go-top" title="Вверх">Вверх</a>');
+});
+
+$(function() {
+ $.fn.scrollToTop = function() {
+  $(this).hide().removeAttr("href");
+  if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")
+  var scrollDiv = $(this);
+  $(window).scroll(function() {
+   if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
+   else $(scrollDiv).fadeIn("slow")
+  });
+  $(this).click(function() {
+   $("html, body").animate({scrollTop: 0}, "slow")
+  })
+ }
+});
+
+$(function() {
+ $("#go-top").scrollToTop();
+});</script>
+<script >
+	$(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+        //забираем идентификатор бока с атрибута href
+        var id  = $(this).attr('href'),
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 700);
+    });
+});
+</script>
+
+	</head>
+
+	<body>
+		<div id="ind"></div>
+		<div class="container-fluid ">		
+			<div id="vmen"  class="collapse row  fixed-top">
+				<div class="col-md-3 offset-md-10 vmenn" id="menu" style="">Меню<br>	
+					  <a href="#ind" id="menu">Главная</a><br>
+					  <a href="#stat" id="menu">Статьи</a><br>
+					  <a href="#spec" id="menu"class="">Учебные заведения</a><br>
+					  <a href="#spec" id="menu"class="">Каталог специальностей</a><br>
+					  <a href="#book" id="menu"class="">Библиотека</a><br>
+					  <a href="#test" id="menu"class="">Проф тесты</a><br>
+					  <a href="#ask" id="menu"class="">Вопрос-ответ</a>
+				</div>
+			</div>
+
+		<div class="row fixed-top header"> 
+			<div class="col "><a href="index.html" id="menu" >Я выбираю профессию</a></div>
+			<div class="col-1 align-self-center">
+				<a class="vmen" href="#vmen" data-toggle="collapse"><img src="img/menu.png" style="width: 40%; height: auto; margin-left: 40%"></a>
+			</div>		
+		</div>			
+
+		<div class="row justify-content-start ">
+			<div class="col-12 p-0"><img class="img-fluid" src="img/fon.jpg"></div>
+			<div class="row-auto">			
+				<div class="col-md-8 col-lg-6 col-xl-4  offset-md-1 about"> Ты заканчиваешь школу и перед тобой стоит нелегкий выбор - выбор твоей будущей професии. Как определиться, что выбрать? Модную, но маловостребованную специальность, или непривлекательную, но пользующуся спросом на рынке труда? Послушать совета родителей или поступить куда-нибудь за компанию с приятелем? Выбор, разумеется, за тобой. Мы не навязываем своего мнения, мы пытаемся помочь разобраться в профессиональном определении с учетом твоего характера, интересов, склонностей.
+				</div>
+			</div>
+		</div>
+
+<!--SLIDER-->
+		<div id="stat"></div>
+		<div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+		  <ol class="carousel-indicators">
+		    <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+		    <li data-target="#carouselIndicators" data-slide-to="1"></li>
+		    <li data-target="#carouselIndicators" data-slide-to="2"></li>
+		  </ol>
+		  <div class="carousel-inner" style="font-size: 80%">
+		    <div class="carousel-item active ">
+		    	<div class="row justify-content-around">
+			      	<div class="col-md-3 carr">
+			      		<p>Самые востребованные профессии в Беларуси </p>
+			      		<img src="img/st1.jpg" class="img-fluid">
+			      		<div style="font-size: 60%">Специалисты в сфере IT-технологий. Тенденция к востребованности айтишников вызревает уже долгих 4 года, как в пределах Беларуси, так и за ее границами, и велика вероятность, что эта профессия будет оставаться в списке лидеров еще не один год. Повсеместно растет количество мелких и крупных компаний, каждой из которых нужна собственная электронная система организации </div><a href="st1.html" id="hr">Читать далее..</a>
+						
+			      	</div>
+			      	<div class=" col-md-3 carr" >
+			      		<p>Советы психолога</p>
+			      		<img src="img/st2.jpg" class="img-fluid">
+			      		<div style="font-size: 60%">Выбор профессии — не минутное дело, оно может оказаться самым трудным выбором в твоей жизни.
+							Постарайся не поддаваться на уговоры родителей стать непременно юристом или врачом. Ты можешь стать самым несчастливым юристом на свете.
+							Подумай, чем бы хотелось заниматься именно тебе. Обязательно размышляй над тем, как осуществить свою мечту. Не останавливайся на мысли: "Я буду бизнесменом, у меня будет сотовый телефон и дорогой автомобиль!". </div><a href="st1.html" id="hr">Читать далее..</a>
+			      	</div>
+			      	<div class="col-md-3 carr">
+			      		<p>Как выбрать профессию</p>
+			      		<img src="img/st3.jpg" class="img-fluid">
+			      		<div style="font-size: 60%">Как же разобраться в себе — Психологи считают, что при выборе профессии очень важно соответствие между психологическими особенностями человека и соответствующими характеристиками профессии. Профессия должна быть ИНТЕРЕСНА. Если тебе нравятся животные, растения, то тебе будет интересно в своей профессиональной деятельности сталкиваться с объектами живой природы. Если ты любишь технику, — интерес к ней будет поддерживать тебя в деятельности инженера-конструктора или физика-теоретика.  </div><a href="st1.html" id="hr">Читать далее..</a>
+			      	</div>
+		      	</div>
+		    </div>
+		    <div class="carousel-item">
+		    	<div class="row justify-content-around">
+		    		<div class=" col-md-3 carr" >
+			      		<p>Самые востребованные профессии в Беларуси </p>
+			      		<img src="img/st1.jpg" class="img-fluid">
+			      		<div style="font-size: 60%">Специалисты в сфере IT-технологий. Тенденция к востребованности айтишников вызревает уже долгих 4 года, как в пределах Беларуси, так и за ее границами, и велика вероятность, что эта профессия будет оставаться в списке лидеров еще не один год. Повсеместно растет количество мелких и крупных компаний, каждой из которых нужна собственная электронная система организации </div><a href="st1.html" id="hr">Читать далее..</a>
+						
+			      	</div>
+			      	<div class=" col-md-3 carr" >
+			      		<p>Советы психолога</p>
+			      		<img src="img/st2.jpg" class="img-fluid">
+			      		<div style="font-size: 60%">Выбор профессии — не минутное дело, оно может оказаться самым трудным выбором в твоей жизни.
+							Постарайся не поддаваться на уговоры родителей стать непременно юристом или врачом. Ты можешь стать самым несчастливым юристом на свете.
+							Подумай, чем бы хотелось заниматься именно тебе. Обязательно размышляй над тем, как осуществить свою мечту. Не останавливайся на мысли: "Я буду бизнесменом, у меня будет сотовый телефон и дорогой автомобиль!". </div><a href="st2.html" id="hr">Читать далее..</a>
+			      	</div>
+			      	<div class="col-md-3 carr">
+			      		<p>Как выбрать профессию</p>
+			      		<img src="img/st3.jpg" class="img-fluid">
+			      		<div style="font-size: 60%">Как же разобраться в себе — Психологи считают, что при выборе профессии очень важно соответствие между психологическими особенностями человека и соответствующими характеристиками профессии. Профессия должна быть ИНТЕРЕСНА. Если тебе нравятся животные, растения, то тебе будет интересно в своей профессиональной деятельности сталкиваться с объектами живой природы. Если ты любишь технику, — интерес к ней будет поддерживать тебя в деятельности инженера-конструктора или физика-теоретика.  </div><a href="st1.html" id="hr">Читать далее..</a>
+			      	</div>
+		      	</div>
+		      </div>		    
+		  </div>
+		  <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+		   <span class="carousel-control-next-icon"  aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
+<!--SLIDER END-->
+
+		<div id="spec"></div>
+		<div class="row justify-content-sm-center ">
+			<div class="col-md-4 block"><img class="img-fluid" src="img/uni.jpg""><br><a id="su" href="uni.html">Учебные заведения</a></div>
+			<div class="col-md-1"></div>
+			<div class="col-md-4 block"><a id="su" href="spec.html">Каталог специальностей</a><br><img class="img-fluid" src="img/spec.jpg" ></div>
+		</div>
+
+		
+
+
+		<div class="row justify-content-sm-center "><div id="book"></div>
+			<div class="col-md-5 block"><img class="img-fluid" src="img/book.jpg""><br><br>
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" id="form-submit">Библиотека</button></div>
+		</div>
+
+<!-- MODAL WINDOW -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Библиотека</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" >
+		<p><a id="hr"  target="_blank" href=metod/МОЙВЫБОР.pdf>* УО "БрГТТК". День открытых дверей. Мой выбор - моя профессия! (<i>для абитуриентов и их родителей</i>)</a></p>
+		<p><a id="hr"  target="_blank" href=metod/metod_brgttk.docx>* УО "БрГТТК". Методическая разработка "Правильный профессиональный выбор - уверенное будущее молодого поколения!</a></p>
+		<p><a id="hr"  target="_blank" href=metod/ПрофБумКаленик.wmv>* УО "МГПЛС". Презентация лицея (<i>для абитуриентов и их родителей</i>)</a></p>
+		<p><a id="hr"  target="_blank" href=metod/>* УО "МГПЛС". Урок по основам экономики "Безработица" (<i> в помощь педагогу, мастеру, куратору</i>)</a></p>
+		<p><a id="hr"  target="_blank" href=metod/ПрофБумШубенок.wmv>* УО "МГПЛС". Профессия строитель (<i>для абитуриентов и их родителей</i>)</a></p>
+		<p><a id="hr"  target="_blank" href=metod/видеоклип.mp4>* УО "МГПЛС". Видеоролик о лицее (<i>для абитуриентов и их родителей</i>)</a></p>
+		<p><a id="hr"  target="_blank" href=metod/Профессия-строителя-моё-будущее.pptx>* УО "МГПЛС". Презентация"Профессия строителя - мое будущее" (<i>для учащихся средней школы</i>)</a></p>
+		<p><a id="hr"  target="_blank" href=metod/Презентация по сварке.pptx>* УО "МГПЛС". Общежитие (<i>для абитуриентов и их родителей</i>)</a></p>
+		<p><a id="hr"  target="_blank" href=metod/ПРОФОРИЕНТАЦИОННАЯ СУББОТА.mht>* УО "МГПЛС": Профориентационная суббота" (<i> Один из дней работы лицея по профориентации. Для учащихся и их родителей. ПОПРОБУЙ СЕБЯ В РОЛИ СТРОИТЕЛЯ!. </i>)</a></p>
+		<p><a id="hr"  target="_blank" href=metod/Презентация по сварке.pptx>* УО "МГПЛС". Презентация"Сварка" (<i>для учащихся лицеев</i>)</a></p>
+		<p><a id="hr"  target="_blank" href=metod/Мастер-классАРХИТЕКТУРА_НА_БУМАГЕ.docx>* УО "МГПЛС". Мастер-класс в фотографиях "Архитектура на бумаге" (<i>для всех желающих научиться делать объемные строения на бумаге</i>)</a></p>
+		<p><a id="hr"  target="_blank" href=metod/МАГЧЫМАСЦІ ЎЗНАЎЛЕННЯ АРНАМЕНТАЎ З ДАПАМОГАЙ КАМ'ЮТЭРНЫХ ТЭХНАЛОГІЙ.docx>* УО "МГПЛС". МАГЧЫМАСЦІ ЎЗНАЎЛЕННЯ АРНАМЕНТАЎ З ДАПАМОГАЙ КАМ'ЮТЭРНЫХ ТЭХНАЛОГІЙ (<i> Использование офисных приложений для восстановления и создания орнамента</i>)</a></p>
+		<p><a id="hr"  target="_blank" href=metod/1.doc>* Классный час "Профессии наших родителей" (<i>для учащихся 2-5 классов</i>)</a></p>
+		<p><a id="hr"  target="_blank" href=metod/1.ppt>* Презентация "Профессии наших родителей" </a></p>
+		<p><a id="hr"  target="_blank" href=metod/Профессии строителя.docx>* Профессии строителя" </a></p>
+		<p><a id="hr"  target="_blank" href=metod/fp.docx>* Методические рекомендации по проведению фестиваля "Фейерверк профессий" </a></p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MODAL WINDOW  END-->
+
+
+		
+		<div class="row justify-content-sm-center"><div id="test"></div>
+			<div class="col-md-8 block" style="font-size: 180% ">Профориентационные тесты<br><br>
+				<div class="row">
+					<div class="col-lg-6"><img src="img/test.jpg" class="rounded img-fluid float-left"></div>
+					<div class="col-lg-6">
+						<div class="list-group list-group-flush"style="font-size: 70%">
+						  <a href="test1.html" class="list-group-item list-group-item-action">Профессиональная привязанность</a>
+						  <a href="test2.html" class="list-group-item list-group-item-action">Интересы и склонности в выборе профессии</a>
+						  <a href="test3.html" class="list-group-item list-group-item-action">Тест на профессию по типу личности</a>
+						  <a href="test4.html" class="list-group-item list-group-item-action">Тест Климова</a>
+						  <a href="test5.html" class="list-group-item list-group-item-action">Имя и профессия</a>
+						  <a href="test6.html" class="list-group-item list-group-item-action">Дата рождения и профессия</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!--SLIDER-->
+
+		<div id="ask"></div>
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		  <ol class="carousel-indicators">
+		    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		  </ol>
+		  <div class="carousel-inner" style="font-size: 80%">
+		    <div class="carousel-item active ">
+		      	<div class="car"><u>Вопрос:</u><br> У меня не совсем хорошие оценки. Какую профессию вы мне посоветуете выбрать? <br> 
+		      	<u>Ответ:</u><br> Это в первую очередь зависит от твоих интересов и склонностей. А если ты не можешь определиться, пройди тестирование, возможно оно тебе поможет определиться с выбором. Оценки не самое главное - главнее желание и стремление овладеть той или иной специальностью. 
+		        </div>
+		    </div>
+		    <div class="carousel-item ">
+		      
+				<div class="car"><u>Вопрос:</u><br> Подскажите куда поступить после 9 класса? Средний балл 9,2. Девчонка. <br> 
+		      	<u>Ответ:</u><br> Татьяна, с вашим средним балом можно поступить в Юридический колледж БГУ 
+		        </div>
+		      </div>		    
+		    <div class="carousel-item ">
+				<div class="car"><u>Вопрос:</u><br> У меня не совсем хорошие оценки. Какую профессию вы мне посоветуете выбрать? <br> 
+		      	<u>Ответ:</u><br> Это в первую очередь зависит от твоих интересов и склонностей. А если ты не можешь определиться, пройди тестирование, возможно оно тебе поможет определиться с выбором. Оценки не самое главное - главнее желание и стремление овладеть той или иной специальностью. 
+		        </div>		    
+		    </div>
+		  </div>
+		  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		    <img src="img/l.png" width="30%">
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		    <img src="img/r.png" width="30%">
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
+<!--SLIDER END-->
+
+
+
+<!--ASK-->
+<div class="row justify-content-sm-center">
+		<a class="ask" href="#askme" id="aaskme" data-toggle="collapse"><div class="col align-self-center">Задать вопрос</div></a>
+
+</div>
+		<div id="askme" class="collapse">
+			<form role="form" id="contactForm" data-toggle="validator">
+				<div class="row justify-content-sm-center">
+					<div class="col-md-6 ask" style="margin-top: 5%;">
+						<div class="row">
+	            <div class="form-group col-sm-6">
+	                <label for="name" >Имя</label>
+	                <input type="text" class="form-control" id="name" placeholder="Введите имя" required data-error="Вы пропустили это поле">
+	                <div class="help-block with-errors"></div>
+	            </div>
+	            <div class="form-group col-sm-6">
+	                <label for="email" >Email</label>
+	                <input type="email" class="form-control" id="email" placeholder="Введите email" required>
+	                <div class="help-block with-errors"></div>
+	            </div>
+	        </div>
+	        <div class="form-group">
+	            <label for="message">Вопрос</label>
+	            <textarea id="message" class="form-control" rows="5" placeholder="Введите вопрос" required></textarea>
+	            <div class="help-block with-errors"></div>
+	        </div>
+	        <button type="submit" id="form-submit" class="btn btn-success j btn-lg pull-right" >Отправить</button>
+	        <div id="msgSubmit" class="h3 text-center hidden"></div>
+	        <div class="clearfix"></div>
+	    			</div>
+	    		</div>
+			</form>
+	</div>
+
+
+<script  type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/validator.min.js"></script>
+<script type="text/javascript" src="js/form-scripts.js"></script>
+
+<!--ASK END-->
+
+
+
+<div class="row footer">
+	<div class="col-md-4" style="font-size: 130%;">
+		Консультационный центр <br> "Я выбираю профессию"<br>
+	</div>
+	<div class="col-md-3"> Контакты: <br> E-mail: prof_kc@mail.ru</div>
+	<div class="col-md-2"><a href="http://25places.16mb.com" target=_blank><img src=img/25.png class="img-fluid" border=0></a></div>
+	<div class="col-md-2"><a href="http://www.kudapostupat.by" title="КУДА ПОСТУПАТЬ — электронный справочник для абитуриентов"> <img alt="www.kudapostupat.by" src="http://www.kudapostupat.by/88x31.gif" border="0"> </a></div>
+</div>
+
+
+
+		</div>
+	</body>
+
+</html>

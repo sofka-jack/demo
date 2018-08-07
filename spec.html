@@ -1,0 +1,177 @@
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Каталог специальностей</title>
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Jura|Montserrat|Poiret+One" rel="stylesheet">		
+		<link rel="stylesheet" href="style.css">	
+		<link href="D:/3 kurs/kursach/open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+		<link href="D:/3 kurs/kursach/open-iconic-master/font/css/open-iconic.css" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		</script>		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+		  <!-- TO TOP -->
+  <script >$(document).ready(function(){
+  $('body').append('<a href="#" id="go-top" title="Вверх">Вверх</a>');
+});
+
+$(function() {
+ $.fn.scrollToTop = function() {
+  $(this).hide().removeAttr("href");
+  if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")
+  var scrollDiv = $(this);
+  $(window).scroll(function() {
+   if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
+   else $(scrollDiv).fadeIn("slow")
+  });
+  $(this).click(function() {
+   $("html, body").animate({scrollTop: 0}, "slow")
+  })
+ }
+});
+
+$(function() {
+ $("#go-top").scrollToTop();
+});</script>
+<script >
+	$(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+        //забираем идентификатор бока с атрибута href
+        var id  = $(this).attr('href'),
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 700);
+    });
+});
+</script>
+
+
+
+	</head>
+
+	<body>
+    <div id="ind"></div>
+    <div class="container-fluid ">    
+      <div id="vmen"  class="collapse row  fixed-top">
+        <div class="col-md-3 offset-md-10 vmenn" id="menu" style="">Меню<br>  
+            <a href="index.html" id="menu" >Главная</a><br>
+            <a href="" id="menu" >Статьи</a><br>
+            <a href="uni.html" id="menu"class="">Учебные заведения</a><br>
+            <a href="#spec" id="menu"class="">Каталог специальностей</a><br>
+            <a href="#book" id="menu"class="">Библиотека</a><br>
+            <a href="#test" id="menu"class="">Профориентационные тесты</a><br>
+            <a href="#ask" id="menu"class="">Вопрос-ответ</a>
+
+        </div>
+      </div>
+
+    <div class="row fixed-top header"> 
+      <div class="col "><a href="index.html" id="menu" >Я выбираю профессию</a></div>
+      <div class="col-1 align-self-center">
+        <a class="vmen" href="#vmen" data-toggle="collapse"><img src="img/menu.png" style="width: 40%; height: auto; margin-left: 40%"></a>
+      </div>    
+    </div>      
+
+    <div class="row justify-content-start ">
+      <div class="col-12 p-0"><img class="img-fluid" src="img/spec2.jpg"></div>
+    </div>
+<div style="margin-top: 2%;    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-size: 220%;">Каталог спецтальностей</div><br>
+    <div class="row justify-content-sm-center">
+      <div class="col-md-9 block" style="margin-top: 1%;">
+        <a id="su" href="#a" data-toggle="collapse">А</a>
+        <a id="su" href="#a" data-toggle="collapse">Б</a>
+
+        <a id="su" href="#a" data-toggle="collapse">В</a>
+            <div id="br" class="collapse">
+                
+            </div>
+        <a id="su" href="#a" data-toggle="collapse">Г</a>
+        <a id="su" href="#a" data-toggle="collapse">Д</a>
+        <a id="su" href="#a" data-toggle="collapse">Е</a>
+        <a id="su" href="#a" data-toggle="collapse">Ё</a>
+        <a id="su" href="#a" data-toggle="collapse">Ж</a>
+        <a id="su" href="#a" data-toggle="collapse">З</a>
+        <a id="su" href="#a" data-toggle="collapse">И</a>
+        <a id="su" href="#a" data-toggle="collapse">К</a>
+        <a id="su" href="#a" data-toggle="collapse">Л</a>
+        <a id="su" href="#a" data-toggle="collapse">М</a>
+        <a id="su" href="#a" data-toggle="collapse">Н</a>
+        <a id="su" href="#a" data-toggle="collapse">О</a>
+        <a id="su" href="#a" data-toggle="collapse">П</a>
+        <a id="su" href="#a" data-toggle="collapse">Р</a>
+        <a id="su" href="#a" data-toggle="collapse">С</a>
+        <a id="su" href="#a" data-toggle="collapse">Т</a>
+        <a id="su" href="#a" data-toggle="collapse">У</a>
+        <a id="su" href="#a" data-toggle="collapse">Ф</a>
+        <a id="su" href="#a" data-toggle="collapse">Х</a>
+        <a id="su" href="#a" data-toggle="collapse">Ц</a>
+        <a id="su" href="#a" data-toggle="collapse">Ч</a>
+        <a id="su" href="#a" data-toggle="collapse">Ш</a>
+        <a id="su" href="#a" data-toggle="collapse">Щ</a>
+        <a id="su" href="#a" data-toggle="collapse">Э</a>
+        <a id="su" href="#a" data-toggle="collapse">Ю</a>
+        <a id="su" href="#a" data-toggle="collapse">Я</a>
+        <br> <br>
+            <div id="a" class="collapse" align="left" style="font-size: 60%;margin-left: 5%;">
+                <a id="su" href="http://kudapostupat.by/speciality/id/433">АВИАЦИОННЫЕ РАДИОЭЛЕКТРОННЫЕ СИСТЕМЫ (ПО НАПРАВЛЕНИЯМ)   </a><br>
+                <a id="su" href="http://kudapostupat.by/speciality/id/434">АВТОМАТИЗАЦИЯ И УПРАВЛЕНИЕ ТЕПЛОЭНЕРГЕТИЧЕСКИМИ ПРОЦЕССАМИ </a><br>
+                <a id="su" href="http://kudapostupat.by/speciality/id/435">АВТОМАТИЗАЦИЯ И УПРАВЛЕНИЕ ЭНЕРГЕТИЧЕСКИМИ ПРОЦЕССАМИ </a><br>
+                <a id="su" href="http://kudapostupat.by/speciality/id/405">АВТОМАТИЗАЦИЯ ТЕХНОЛОГИЧЕСКИХ ПРОЦЕССОВ И ПРОИЗВОДСТВ (ПО НАПРАВЛЕНИЯМ) </a><br>
+                <a id="su" href="http://kudapostupat.by/speciality/id/286">АВТОМАТИЗИРОВАННЫЕ СИСТЕМЫ ОБРАБОТКИ ИНФОРМАЦИИ </a><br>
+                <a id="su" href="http://kudapostupat.by/speciality/id/427">АВТОМАТИЗИРОВАННЫЕ ЭЛЕКТРОПРИВОДЫ</a><br>
+                <a id="su" href="http://kudapostupat.by/speciality/id/436">АВТОМАТИКА, ТЕЛЕМЕХАНИКА И СВЯЗЬ НА ЖЕЛЕЗНОДОРОЖНОМ ТРАНСПОРТЕ</a><br>
+                <a id="su" href="http://kudapostupat.by/speciality/id/283">АВТОМОБИЛЕСТРОЕНИЕ (ПО НАПРАВЛЕНИЯМ) </a><br>
+                <a id="su" href="http://kudapostupat.by/speciality/id/2">АВТОМОБИЛЬНЫЕ ДОРОГИ</a><br>
+                <a id="su" href="http://kudapostupat.by/speciality/id/314">АВТОСЕРВИС</a><br>
+                <a id="su" href="http://kudapostupat.by/speciality/id/333">АГРОНОМИЯ</a><br>
+                <a id="su" href="http://kudapostupat.by/speciality/id/437">АГРОХИМИЯ И ПОЧВОВЕДЕНИЕ </a><br>
+                <a id="su" href="http://kudapostupat.by/speciality/id/438">АГРОХИМИЯ, СЕМЕНОВОДСТВО И ЗАЩИТА РАСТЕНИЙ </a><br>
+                <a id="su" href="http://kudapostupat.by/speciality/id/439">АКТЕРСКОЕ ИСКУССТВО (ПО НАПРАВЛЕНИЯМ) </a><br>
+                <a id="su" href="http://kudapostupat.by/speciality/id/278">АКТУАРНАЯ МАТЕМАТИКА </a><br>
+                <a id="su" href="http://kudapostupat.by/speciality/id/440">АНАЛИТИЧЕСКИЙ КОНТРОЛЬ ХИМИЧЕСКИХ СОЕДИНЕНИЙ </a><br>
+                <a id="su" href="http://kudapostupat.by/speciality/id/441">АРФА </a><br>
+                <a id="su" href="http://kudapostupat.by/speciality/id/4">АРХИТЕКТУРА</a><br>
+                <a id="su" href="http://kudapostupat.by/speciality/id/442">АРХИТЕКТУРНЫЙ ДИЗАЙН </a><br>
+                <a id="su" href="http://kudapostupat.by/speciality/id/443">АУДИТ И РЕВИЗИЯ </a><br>
+                <a id="su" href="http://kudapostupat.by/speciality/id/444">АЭРОКОСМИЧЕСКИЕ РАДИОЭЛЕКТРОННЫЕ И ИНФОРМАЦИОННЫЕ СИСТЕМЫ И ТЕХНОЛОГИИ </a><br> 
+            </div>
+            <div id="br" class="collapse">
+                
+            </div>
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+<div class="row footer">
+  <div class="col-md-4" style="font-size: 130%;">
+    Консультационный центр <br> "Я выбираю профессию"<br>
+  </div>
+  <div class="col-md-3"> Контакты: <br> E-mail: prof_kc@mail.ru</div>
+  <div class="col-md-2"><a href="http://25places.16mb.com" target=_blank><img src=img/25.png class="img-fluid" border=0></a></div>
+  <div class="col-md-2"><a href="http://www.kudapostupat.by" title="КУДА ПОСТУПАТЬ — электронный справочник для абитуриентов"> <img alt="www.kudapostupat.by" src="http://www.kudapostupat.by/88x31.gif" border="0"> </a></div>
+</div>
+
+
+
+    </div>
+  </body>
+
+</html>

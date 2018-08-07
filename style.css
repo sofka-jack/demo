@@ -1,0 +1,166 @@
+   body {
+    /*background: url(img/fon.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;*/
+  	font-family: 'Poiret One', cursive;/*like*/
+  	/*font-family: 'Jura', sans-serif;*/
+   }
+    
+    .p-0{
+      padding: 0;
+    }
+
+    @media all and (min-width: 992px) {
+            .about{
+                font-size: calc(100vw / 50); //100% ширины экрана деленное на произвольное число
+            }
+        }
+    @media all and (min-width: 1400px) {
+            .about{
+                font-size: calc(100vw * 0.03); //100% ширины экрана умноженное на произвольное число
+            }
+        }
+
+a {text-decoration: none;}
+a:hover {text-decoration: underline;}
+
+#go-top {
+  position: fixed; 
+  bottom: 30px; 
+  font-size: 150%;
+  font-family: 'Poiret One', cursive;
+  right: 10px; 
+  cursor:pointer; 
+  display:none;
+  width: 50px;
+  height: 20px;
+}
+ 
+#go-top:hover {
+text-decoration:underline;
+}
+
+#menu{
+  color: white;
+}
+
+#aaskme:hover{
+color: #595959;
+}
+
+
+   .header{                  /*shapka*/
+    background-color: black;
+    opacity: 0.5;
+  	font-size: 210%;
+    font-family: 'Poiret One', cursive;
+  	color: white;
+    padding-left: 2%;
+    z-index: 7;
+   }
+
+
+
+   .about{                    /*o chem vse*/
+    font-family: 'Poiret One', cursive;
+    position:absolute;
+    margin-top: -43%;
+
+   	background-color: black;
+    opacity: 0.5;
+    color: white;
+    font-size: 120%;
+    text-align: center;
+   	padding: 3%;
+
+   }
+
+   .block{ /*oformlenie blockov*/
+    margin-top: 10%;
+    padding: 5%;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-size: 180%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+   }
+
+   .ask{
+    font-family: 'Poiret One', cursive;
+    font-size: 180%;
+    color: #595959;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 1%;
+   }
+   .carr{
+    width: 60%;
+
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    padding: 1%;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-size: 180%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+   }
+   .car{
+    width: 60%;
+
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    padding: 5%;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-size: 180%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+   }
+/*button menu*/
+
+   .vmen{
+
+color: white;
+   }
+   .vmen:hover{
+
+    color: white;
+   }
+/*menu*/
+   .vmenn{
+    background-color: black;
+    opacity: 0.8;
+    height: 100%;
+    font-size: 140%;
+    font-family: 'Poiret One', cursive;
+    color: white;
+/*    margin-top: 3.25%;*/
+    padding: 1%;
+   }
+
+    .footer{ /*oformlenie blockov*/
+    margin-top: 10%;
+    padding: 1%;
+    text-align: left;
+    font-family: 'Poiret One', cursive;
+    font-size: 110%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+   }
+
+#hr{/*link to spicial uni*/
+  font-size: 80%;
+  color: #595959;
+}
+
+#su{/*link to uni and spec*/
+  color: #595959;
+}
+
+#form-submit{
+    font-family: 'Poiret One', cursive;
+    font-size: 70%;
+    background-color: white;
+    color: #595959;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 1%;
+    border-color: white;
+}
